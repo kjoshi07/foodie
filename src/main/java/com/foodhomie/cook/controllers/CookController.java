@@ -30,7 +30,7 @@ public class CookController {
     // Get All Cooks
    // @CrossOrigin(origins = "http://localhost:8012") // Allow access from this entry point
     @GetMapping("/v1/cooks")
-    @PreAuthorize("hasAuthority('ADMIN')")
+    //@PreAuthorize("hasAuthority('ADMIN')")
     public List<Cook> getAllCooks(){
         return cookService.getAllCooks();
     }

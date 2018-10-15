@@ -1,6 +1,8 @@
 package com.foodhomie.cook.auth2;
 
-public class ApplicationUser {
+import java.io.Serializable;
+
+public class ApplicationUser implements Serializable {
 
     private String username;
     private String password;
